@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+main{
+    --section-height: 619px;
+}
+#hero {
+    display: flex;
+    align-items: center;
+
+    height: var(--section-height);
+
+    width: 100%;
+}
+#hero > .image,
+#hero > .text{
+    box-sizing: border-box;
+
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+}
+#hero > .image > img{
+    display: flex;
+    object-fit: contain;
+    object-position: bottom;
+
+    width: 100%;
+    height: 100%;
+}
+#hero > .image > .snippet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    
+    border-radius: 1rem;
+}
+#hero > .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 5% 0 2.5%;
+}
+#hero > .text > * {
+    margin-block: 0;
+}
+#hero > .text > h1 {
+    font-size: clamp(5rem, 11rem, 15vw);
+    line-height: 1em;
+}
+#hero > .text > p {
+    margin-top: 2.5rem;
+
+    font-size: clamp(1rem, 1.75rem, 2vw);
+}
+#about-me{
+    height: var(--section-height);
+    width: 100%;
+    background: #080908;
+}
