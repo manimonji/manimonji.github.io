@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+}
+main{
+    --fs-s: 1.5rem;
+    --fs-xs: 2rem;
+    --fs-xl: 4rem;
+}
+#hero > .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+
+    margin-top: 1rem;
+
+    overflow: hidden;
+}
+#hero > .image > img{
+    display: flex;
+    width: 105vw;
+}
+#hero > .text > .introduction-container{
+    width: 100%;
+
+    position: relative;
+
+    padding-block: calc(var(--fs-xl) / 6);
+    margin-top: -2rem;
+    
+    background-color: #050505;
+
+    transform: skewY(-5deg);
+
+    color: #ffffff;
+}
+#hero > .text > .introduction-container > .introduction{
+    display: flex;
+    flex-direction: column;
+
+    width: fit-content;
+
+    margin: auto;
+
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+#hero > .text > .introduction-container > .introduction > h1{
+    margin: 0;
+
+    line-height: 1em;
+    font-size: var(--fs-xl);
+}
+#hero > .text > .introduction-container > .introduction > p{
+    margin: 0;
+
+    font-size: var(--fs-s);
+    font-weight: 100;
+}
+#hero > .text > .introduction-container > .introduction > a{
+    width: fit-content;
+
+    padding: 0.75rem 1rem;
+    margin-inline: auto;
+    margin-block: 1rem;
+
+    color: #050505;
+    background-color: #ffffff;
+
+    border-radius: 0.5rem;
+
+    text-decoration: none;
+    font-size: var(--fs-xs);
+}
+#hero > .text > .introduction-container > .snippet{
+    position: absolute;
+}
+#about-me h2{
+    text-align: center;
+    font-family: Oswald;
+    font-size: 2rem;
+}
