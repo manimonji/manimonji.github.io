@@ -10,6 +10,28 @@ main{
     --fs-xs: 2rem;
     --fs-xl: 4rem;
 }
+section > h2{
+    margin: 0 0 1em 0;
+    padding: 1em 0 0 0;
+
+    text-align: center;
+    font-family: Oswald;
+    font-size: 2rem;
+}
+section > p{
+    margin: 1.25em;
+
+    font-size: 1.25rem;
+}
+section > p:last-child{
+    padding-bottom: 1em;
+    margin-bottom: 0;
+}
+section > p.description{
+    margin-top: -1rem;
+    
+    text-align: center;
+}
 #hero > .image{
     display: flex;
     align-items: center;
@@ -80,8 +102,37 @@ main{
 #hero > .text > .introduction-container > .snippet{
     position: absolute;
 }
-#about-me h2{
-    text-align: center;
-    font-family: Oswald;
-    font-size: 2rem;
+#certificates{
+    color: #fff;
+    background-color: #0069d1;
+    padding-bottom: 1px;
+}
+#certificates > a.certificate{
+    display: block;
+
+    box-sizing: border-box;
+
+    width: 80%;
+
+    padding: 1rem;
+
+    margin: 0 auto calc(2rem - 1px) auto;
+    
+    color: #000;
+    background-color: #fff;
+
+    border-radius: 0.5rem;
+
+    text-decoration: none;
+}
+#certificates > a.certificate > h3{
+    margin: 0 0 0 ;
+
+    font-size: 1.5rem;
+}
+
+#certificates > a.certificate > p{
+    margin: 1rem 0 0 0;
+
+    font-size: 1.25rem;
 }
