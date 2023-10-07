@@ -109,20 +109,27 @@ section > p.description{
     position: absolute;
 }
 #certificates{
+    padding: 0.5px; 
+    /* equal to zero, padding disables marging collapse */
+
     color: #fff;
     background-color: #0069d1;
-    padding-bottom: 1px;
 }
-#certificates > a.certificate{
+#certificates > .certificate-links{
+    column-width: 25rem;
+
+    margin: 1rem;
+}
+#certificates > .certificate-links >  a.certificate{
     display: block;
+    break-inside: avoid;
 
     box-sizing: border-box;
 
     /* width: 80%; */
 
     padding: 1rem;
-
-    margin: 0 2rem calc(2rem - 1px) 2rem;
+    margin-bottom: 1rem;
     
     color: #000;
     background-color: #fff;
@@ -133,17 +140,17 @@ section > p.description{
 
     transition: 0.25s;
 }
-#certificates > a.certificate > h3{
+#certificates > .certificate-links > a.certificate > h3{
     margin: 0 0 0 ;
 
     font-size: 1.5rem;
 }
-#certificates > a.certificate > p{
+#certificates > .certificate-links > a.certificate > p{
     margin: 1rem 0 0 0;
 
     font-size: 1.25rem;
 }
-#certificates > a.certificate:hover{
+#certificates > .certificate-links > a.certificate:hover{
     box-shadow: rgba(0,0,0,0.5) 0 0 30px;
 }
 #copyright {
