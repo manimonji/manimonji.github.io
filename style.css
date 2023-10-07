@@ -32,6 +32,9 @@ section > p.description{
     
     text-align: center;
 }
+#hero {
+    position: relative;
+}
 #hero > .image{
     display: flex;
     align-items: center;
@@ -102,6 +105,9 @@ section > p.description{
 #hero > .text > .introduction-container > .snippet{
     position: absolute;
 }
+#hero > .menu{
+    position: absolute;
+}
 #certificates{
     color: #fff;
     background-color: #0069d1;
@@ -112,11 +118,11 @@ section > p.description{
 
     box-sizing: border-box;
 
-    width: 80%;
+    /* width: 80%; */
 
     padding: 1rem;
 
-    margin: 0 auto calc(2rem - 1px) auto;
+    margin: 0 2rem calc(2rem - 1px) 2rem;
     
     color: #000;
     background-color: #fff;
@@ -124,15 +130,22 @@ section > p.description{
     border-radius: 0.5rem;
 
     text-decoration: none;
+
+    transition: 0.25s;
 }
 #certificates > a.certificate > h3{
     margin: 0 0 0 ;
 
     font-size: 1.5rem;
 }
-
 #certificates > a.certificate > p{
     margin: 1rem 0 0 0;
 
     font-size: 1.25rem;
+}
+#certificates > a.certificate:hover{
+    box-shadow: rgba(0,0,0,0.5) 0 0 30px;
+}
+#copyright {
+    text-align: center;
 }
