@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@ section > h2{
     padding: 1em 0 0 0;
 
     text-align: center;
-    font-family: Oswald;
+    font-family: 'Open Sans';
     font-size: 2rem;
 }
 section > p{
@@ -53,16 +54,17 @@ section > p.description{
 #hero > .text > .introduction-container{
     width: 100%;
 
-    position: relative;
-
-    padding-block: calc(var(--fs-xl) / 6);
-    margin-top: -2rem;
+    padding-block: 5vw;
+    margin-top: -5vw;
     
+    position: relative;
+    
+    color: #ffffff;
     background-color: #050505;
 
-    transform: skewY(-5deg);
+    font-size: 7vw;
 
-    color: #ffffff;
+    transform: skewY(-5deg);
 }
 #hero > .text > .introduction-container > .introduction{
     display: flex;
@@ -79,28 +81,28 @@ section > p.description{
     margin: 0;
 
     line-height: 1em;
-    font-size: var(--fs-xl);
+    font-size: 2em;
 }
 #hero > .text > .introduction-container > .introduction > p{
     margin: 0;
 
-    font-size: var(--fs-s);
+    font-size: 0.75em;
     font-weight: 100;
 }
 #hero > .text > .introduction-container > .introduction > a{
     width: fit-content;
 
-    padding: 0.75rem 1rem;
+    padding: 0.25em 0.5em;
     margin-inline: auto;
-    margin-block: 1rem;
+    margin-top: 0.25em;
 
     color: #050505;
     background-color: #ffffff;
 
-    border-radius: 0.5rem;
+    border-radius: 0.25em;
 
     text-decoration: none;
-    font-size: var(--fs-xs);
+    font-size: 0.75em;
 }
 #hero > .text > .introduction-container > .snippet{
     position: absolute;
