@@ -62,7 +62,7 @@ section > p.description{
     color: #ffffff;
     background-color: #050505;
 
-    font-size: 7vw;
+    font-size: 9vw;
 
     transform: skewY(-5deg);
 }
@@ -107,6 +107,44 @@ section > p.description{
 #hero > .text > .introduction-container > .snippet{
     position: absolute;
 }
+#hero > .text > .introduction-container > .snippet[src="js.svg"]{
+    width: 2em;
+    top: 2em;
+    right: 1em;
+
+    transform: rotateZ(30deg);
+}
+#hero > .text > .introduction-container > .snippet[src="html5.svg"]{
+    width: 1.4em;
+    top: 2em;
+    left: 0.8em;
+
+    transform: rotateZ(-10deg);
+}
+#hero > .text > .introduction-container > .snippet[src="chess-king.svg"]{
+    width: 2.5em;
+    right: 0.5em;
+    bottom: 2em;
+
+    transform: rotateZ(-30deg);
+}
+#hero > .text > .introduction-container > .snippet[src="react.svg"]{
+    bottom: 3em;
+    left: 0.3em;
+    width: 2.1em;
+}
+#hero > .text > .introduction-container > .snippet[src="css3.svg"]{
+    bottom: 0.5em;
+    left: 1.5em;
+    width: 1.7em;
+
+    transform: rotateZ(-30deg); 
+}
+#hero > .text > .introduction-container > .snippet[src="jquery.svg"]{
+    top: 0.5em;
+    right: 0.5em;
+    width: 1.25em;
+}
 #hero > .menu{
     position: absolute;
 }
@@ -118,7 +156,7 @@ section > p.description{
     background-color: #0069d1;
 }
 #certificates > .certificate-links{
-    column-width: 25rem;
+    column-width: 20rem;
 
     margin: 1rem;
 }
