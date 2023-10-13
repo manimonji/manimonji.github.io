@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
 }
-main{
+
+main {
     --fs-s: 1.5rem;
     --fs-xs: 2rem;
     --fs-xl: 4rem;
 }
-section > h2{
+
+section>h2 {
     margin: 0 0 1em 0;
     padding: 1em 0 0 0;
 
@@ -19,24 +22,29 @@ section > h2{
     font-family: 'Open Sans';
     font-size: 2rem;
 }
-section > p{
+
+section>p {
     margin: 1.25em;
 
     font-size: 1.25rem;
 }
-section > p:last-child{
+
+section>p:last-child {
     padding-bottom: 1em;
     margin-bottom: 0;
 }
-section > p.description{
+
+section>p.description {
     margin-top: -1rem;
-    
+
     text-align: center;
 }
+
 #hero {
     position: relative;
 }
-#hero > .image{
+
+#hero>.image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,26 +55,31 @@ section > p.description{
 
     overflow: hidden;
 }
-#hero > .image > img{
+
+#hero>.image>img {
     display: flex;
+
     width: 105vw;
+    max-width: 45rem;
 }
-#hero > .text > .introduction-container{
+
+#hero>.text>.introduction-container {
     width: 100%;
 
-    padding-block: 5vw;
-    margin-top: -5vw;
-    
+    padding-block: 0.25em 0.5em;
+    margin-top: -1em;
+
     position: relative;
-    
+
     color: #ffffff;
     background-color: #050505;
 
-    font-size: 9vw;
+    font-size: min(9vw, 3.25rem);
 
     transform: skewY(-5deg);
 }
-#hero > .text > .introduction-container > .introduction{
+
+#hero>.text>.introduction-container>.introduction {
     display: flex;
     flex-direction: column;
 
@@ -77,19 +90,22 @@ section > p.description{
     text-transform: uppercase;
     font-family: Oswald;
 }
-#hero > .text > .introduction-container > .introduction > h1{
+
+#hero>.text>.introduction-container>.introduction>h1 {
     margin: 0;
 
     line-height: 1em;
     font-size: 2em;
 }
-#hero > .text > .introduction-container > .introduction > p{
+
+#hero>.text>.introduction-container>.introduction>p {
     margin: 0;
 
     font-size: 0.75em;
     font-weight: 100;
 }
-#hero > .text > .introduction-container > .introduction > a{
+
+#hero>.text>.introduction-container>.introduction>a {
     width: fit-content;
 
     padding: 0.25em 0.5em;
@@ -104,63 +120,74 @@ section > p.description{
     text-decoration: none;
     font-size: 0.75em;
 }
-#hero > .text > .introduction-container > .snippet{
+
+#hero>.text>.introduction-container>.snippet {
     position: absolute;
 }
-#hero > .text > .introduction-container > .snippet[src="js.svg"]{
+
+#hero>.text>.introduction-container>.snippet[src="js.svg"] {
     width: 2em;
-    top: 2em;
-    right: 1em;
+    top: calc(50% - 2.5em);
+    right: calc(50% - 4.5em);
 
     transform: rotateZ(30deg);
 }
-#hero > .text > .introduction-container > .snippet[src="html5.svg"]{
+
+#hero>.text>.introduction-container>.snippet[src="html5.svg"] {
     width: 1.4em;
-    top: 2em;
-    left: 0.8em;
+    top: calc(50% - 2.75em);
+    left: calc(50% - 4.8em);
 
     transform: rotateZ(-10deg);
 }
-#hero > .text > .introduction-container > .snippet[src="chess-king.svg"]{
+
+#hero>.text>.introduction-container>.snippet[src="chess-king.svg"] {
     width: 2.5em;
-    right: 0.5em;
-    bottom: 2em;
+    bottom: calc(50% - 2.5em);
+    right: calc(50% - 5em);
 
     transform: rotateZ(-30deg);
 }
-#hero > .text > .introduction-container > .snippet[src="react.svg"]{
-    bottom: 3em;
-    left: 0.3em;
-    width: 2.1em;
-}
-#hero > .text > .introduction-container > .snippet[src="css3.svg"]{
-    bottom: 0.5em;
-    left: 1.5em;
-    width: 1.7em;
 
-    transform: rotateZ(-30deg); 
+#hero>.text>.introduction-container>.snippet[src="react.svg"] {
+    width: 2.1em;
+    bottom: calc(50% - 1.5em);
+    left: calc(50% - 5.25em);
 }
-#hero > .text > .introduction-container > .snippet[src="jquery.svg"]{
-    top: 0.5em;
-    right: 0.5em;
+
+#hero>.text>.introduction-container>.snippet[src="css3.svg"] {
+    width: 1.7em;
+    bottom: 1em;
+    left: calc(50% - 4.25em);
+
+    transform: rotateZ(-30deg);
+}
+
+#hero>.text>.introduction-container>.snippet[src="jquery.svg"] {
     width: 1.25em;
+    top: calc(50% - 4em);
+    right: calc(50% - 5em);
 }
-#hero > .menu{
+
+#hero>.menu {
     position: absolute;
 }
-#certificates{
-    padding: 0.5px; 
+
+#certificates {
+    padding: 0.5px;
     /* equal to zero, padding disables marging collapse */
 
     color: #fff;
     background-color: #0069d1;
 }
-#certificates > .certificate-links{
+
+#certificates>.certificate-links {
     column-width: 20rem;
 
     margin: 1rem;
 }
-#certificates > .certificate-links >  a.certificate{
+
+#certificates>.certificate-links>a.certificate {
     display: block;
     break-inside: avoid;
 
@@ -170,7 +197,7 @@ section > p.description{
 
     padding: 1rem;
     margin-bottom: 1rem;
-    
+
     color: #000;
     background-color: #fff;
 
@@ -180,19 +207,23 @@ section > p.description{
 
     transition: 0.25s;
 }
-#certificates > .certificate-links > a.certificate > h3{
-    margin: 0 0 0 ;
+
+#certificates>.certificate-links>a.certificate>h3 {
+    margin: 0 0 0;
 
     font-size: 1.5rem;
 }
-#certificates > .certificate-links > a.certificate > p{
+
+#certificates>.certificate-links>a.certificate>p {
     margin: 1rem 0 0 0;
 
     font-size: 1.25rem;
 }
-#certificates > .certificate-links > a.certificate:hover{
-    box-shadow: rgba(0,0,0,0.5) 0 0 30px;
+
+#certificates>.certificate-links>a.certificate:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 30px;
 }
+
 #copyright {
     text-align: center;
 }
