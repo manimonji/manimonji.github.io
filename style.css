@@ -30,7 +30,7 @@ section>p {
 }
 
 section>p:last-child {
-    padding-bottom: 1em;
+    padding-bottom: 2rem;
     margin-bottom: 0;
 }
 
@@ -46,7 +46,7 @@ section>p.description {
 
 #hero>.image {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     max-width: 100%;
@@ -78,7 +78,15 @@ section>p.description {
 
     transform: skewY(-5deg);
 }
+#hero>.text>.introduction-container>.edge{
+    display: none;
+    flex-grow: 1;
 
+    height: 0;
+}
+#hero>.text>.introduction-container>.edge:last-child{
+    transform: rotateZ(180deg);
+}
 #hero>.text>.introduction-container>.introduction {
     display: flex;
     flex-direction: column;
@@ -157,7 +165,7 @@ section>p.description {
 
 #hero>.text>.introduction-container>.snippet[src="css3.svg"] {
     width: 1.7em;
-    bottom: 1em;
+    bottom: calc(50% - 3.75em);
     left: calc(50% - 4.25em);
 
     transform: rotateZ(-30deg);
@@ -227,3 +235,47 @@ section>p.description {
 #copyright {
     text-align: center;
 }
+
+@media only screen and (width > 850px) {
+    section>p {
+        margin: 1.25em 10vw;
+    
+        font-size: 1.25rem;
+    }
+    #hero{
+        display: flex;
+    }
+    #hero>.image{
+        max-width: 50%;
+    }
+    #hero>.text{
+        flex-grow: 1;
+
+        width: unset;
+    }
+    #hero>.text>.introduction-container{
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 0;
+        margin-top: 0;
+
+        font-size: min(4vw, 3.25em);
+
+        transform: none;
+    }
+    #hero > .text > .introduction-container >.edge{
+        display: block;
+    }
+    #hero > .text > .introduction-container > .introduction{
+        margin: 0 auto;
+    }
+}
+/* @media only screen and (width > 1250px) {
+    #hero > .text > .introduction-container >.edge{
+        visibility: hidden;
+    }
+} */
